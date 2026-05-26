@@ -107,6 +107,7 @@ Read in order:
 - **NEVER guess tool paths** — read `tool-index.md` first, it contains the exact installed path for each tool
 - Missing tools → call `bootstrap-reverse.ps1` to auto-install, do NOT just report errors
 - **After ANY new tool installation, MUST run `refresh-tool-index.ps1`** to update paths in tool-index.md. This ensures other CLI clients can find the tools without reinstalling.
+- When writing tool-index.md entries, paths MUST be **complete absolute paths** (e.g., `D:\wangluo\jadx\bin\jadx.bat`, NOT just `jadx`). Include: full path, version number, install method, and verification command.
 - Same tool fails auto-install 2 times → stop retrying, output full manual install steps
 - MCP service port mismatch → ask user for actual port, help update config
 - `tool-index.md` is the **shared registry** — all CLIs read from it, all CLIs write to it after installing

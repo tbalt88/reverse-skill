@@ -5,6 +5,7 @@
 > - Scan time: (auto-generated)
 > - Routing entry: `SKILL.md` → `routing.md` → corresponding sub-skill
 > - Note: For MCP servers like jshookmcp, `yes` only means the local machine has the runtime (node/npx), NOT that it's registered and enabled in your AI client.
+> - **IMPORTANT**: All paths MUST be complete absolute paths (e.g., `D:\wangluo\jadx\bin\jadx.bat`). Never write just the tool name. Include version, full path, and verification command. This is the shared registry that ALL CLI clients rely on.
 
 ## Tool Availability Table
 
