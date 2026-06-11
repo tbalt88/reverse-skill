@@ -813,7 +813,8 @@ function Ensure-GitCloneInstall {
     }
 
     if (Test-Path -LiteralPath $TargetPath) {
-        Remove-Item -LiteralPath $TargetPath -Recurse -Force
+        $backupPath = "$TargetPath.bak-$([DateTime]::UtcNow.ToString('yyyyMMddHHmmss'))"
+        Move-Item -LiteralPath $TargetPath -Destination $backupPath -Force
     }
 
     Ensure-DownloadDirectory -Path (Split-Path -Path $TargetPath -Parent)
