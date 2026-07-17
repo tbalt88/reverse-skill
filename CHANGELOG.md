@@ -5,6 +5,13 @@ All notable changes to **reverse-skill** are documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning follows [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- Ten new first-class skills (R21–R30): `protocol-reverse`, `ghidra-reverse`, `cloud-k8s`, `windows-ad`, `digital-forensics`, `code-audit`, `threat-hunting`, `game-reverse`, `wifi-wireless`, `browser-extension-reverse`
+- Wired into `MASTER-ROUTING.md`, `master-route.ps1`, `routing.md`, module table, domain map, role-map, and coherence tests
+
 ## [1.0.0] — 2026-07-18
 
 First **formal** public release of the reverse-skill skill-router pack.

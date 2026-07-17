@@ -26,7 +26,16 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | Malware / virus sample | `malware-analysis/SKILL.md` — six-stage + YARA/Sigma | `ida-reverse/` deep dive |
 | macOS / iOS | `reverse-engineering/platforms.md` — Mach-O/ObjC/Swift | `mobile-reverse/` for iOS-specific |
 | Game (Unity) | `reverse-engineering/` — engine reverse, anti-cheat, IL2CPP/Mono (see seed-014) | `ida-reverse/` deep analysis |
-| Memory dump / PCAP | `reverse-engineering/platforms.md` | `reverse-engineering/patterns*.md` |
+| Memory dump / PCAP | `digital-forensics/` — memory/timeline/PCAP IR | `protocol-reverse/` for protocol recovery |
+| Custom protocol / Protobuf / gRPC | `protocol-reverse/` | `js-reverse/` if pure browser WS crypto |
+| Cloud / Container / K8s | `cloud-k8s/` | CTF: `../CTF-Sandbox-Orchestrator/competition-agent-cloud/` |
+| Windows AD / Kerberos / AD CS | `windows-ad/` | multi-stage: `attack-chain/` |
+| Source code / SAST | `code-audit/` | deps/CI: `supply-chain-security/` |
+| Game client (Unity/UE) | `game-reverse/` | `dotnet-reverse/` for Mono assemblies |
+| Browser extension (crx/xpi) | `browser-extension-reverse/` | page JS only → `js-reverse/` |
+| Wi-Fi / wireless | `wifi-wireless/` | close-range chain → `attack-chain/` |
+| Blue team / threat hunt | `threat-hunting/` | sample IOC → `malware-analysis/` |
+| Ghidra (no IDA) | `ghidra-reverse/` | `ida-reverse/` if IDA MCP available |
 
 | OLLVM-obfuscated binary (控制流平坦化/虚假控制流/MBA) | `reverse-engineering/references/ollvm-deobfuscation.md` — 完整脱密工作流 | obpo-plugin / d810-ng (IDA) / ollvm-unflattener (Miasm) / ollvm-breaker (Binary Ninja) / angr / deollvm (ARM64)
 | Cryptography / encryption algorithms | `reverse-engineering/patterns*.md` — crypto patterns | `js-reverse/` (if frontend crypto) |
@@ -146,8 +155,18 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | "anonymize / placeholder / writeup desensitize" | `field-journal/anonymization.md` |
 | "Hydra / online brute force" | `pentest-tools/SKILL.md` — online password attack |
 | "Metasploit / msfconsole / exploit" | `pentest-tools/SKILL.md` — exploitation framework |
-| "Wireshark / packet analysis / PCAP" | `pentest-tools/SKILL.md` + `reverse-engineering/platforms.md` |
+| "Wireshark / packet analysis / PCAP" | `digital-forensics/` or `protocol-reverse/` |
 | "BurpSuite / web proxy / intercept" | `pentest-tools/SKILL.md` — web proxy |
+| "protocol reverse / Protobuf / gRPC / custom protocol" | `protocol-reverse/SKILL.md` |
+| "Ghidra / analyzeHeadless / no IDA" | `ghidra-reverse/SKILL.md` |
+| "Kubernetes / K8s / container escape / cloud IAM" | `cloud-k8s/SKILL.md` |
+| "Active Directory / Kerberoast / Certipy / BloodHound" | `windows-ad/SKILL.md` |
+| "forensics / Volatility / memory dump / IR timeline" | `digital-forensics/SKILL.md` |
+| "code audit / SAST / Semgrep / CodeQL / whitebox" | `code-audit/SKILL.md` |
+| "threat hunting / blue team / detection engineering" | `threat-hunting/SKILL.md` |
+| "game reverse / IL2CPP / Unity / Unreal" | `game-reverse/SKILL.md` |
+| "Wi-Fi / aircrack / wireless pentest" | `wifi-wireless/SKILL.md` |
+| "browser extension / Chrome extension / crx" | `browser-extension-reverse/SKILL.md` |
 | "ProxyCat / proxy pool / IP rotation" | `pentest-tools/SKILL.md` — proxy management |
 
 ## CTF Wording Normalization

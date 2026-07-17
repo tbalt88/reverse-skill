@@ -151,7 +151,17 @@
 | "Hydra/在线爆破/SSH 爆破" | `pentest-tools/SKILL.md` — 在线密码爆破 |
 | "Nikto/Web 服务器扫描" | `pentest-tools/SKILL.md` — Web 漏洞扫描 |
 | "Metasploit/msfconsole/exploit" | `pentest-tools/SKILL.md` — 利用框架 |
-| "Wireshark/抓包分析/PCAP" | `pentest-tools/SKILL.md` + `reverse-engineering/platforms.md` |
+| "Wireshark/抓包分析/PCAP" | `digital-forensics/` 或 `protocol-reverse/` |
+| "协议逆向/Protobuf/自定义协议" | `protocol-reverse/SKILL.md` |
+| "Ghidra/无 IDA" | `ghidra-reverse/SKILL.md` |
+| "K8s/容器逃逸/云安全" | `cloud-k8s/SKILL.md` |
+| "域渗透/BloodHound/Certipy/Kerberoast" | `windows-ad/SKILL.md` |
+| "取证/Volatility/内存转储" | `digital-forensics/SKILL.md` |
+| "代码审计/SAST/Semgrep" | `code-audit/SKILL.md` |
+| "威胁狩猎/蓝队/检测工程" | `threat-hunting/SKILL.md` |
+| "游戏逆向/IL2CPP/Unity" | `game-reverse/SKILL.md` |
+| "WiFi/无线渗透/aircrack" | `wifi-wireless/SKILL.md` |
+| "浏览器扩展/Chrome 扩展/crx" | `browser-extension-reverse/SKILL.md` |
 | "BurpSuite/Web 代理/拦截" | `pentest-tools/SKILL.md` — Web 代理 |
 | "Responder/LLMNR 投毒/NBT-NS" | `pentest-tools/SKILL.md` — 内网投毒 |
 | "BloodHound/AD 路径/攻击图" | `pentest-tools/SKILL.md` — AD 攻击路径可视化 |

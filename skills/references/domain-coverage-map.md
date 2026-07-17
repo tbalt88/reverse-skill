@@ -1,7 +1,7 @@
 # 本包领域覆盖图（深度优先）
 
 > 对照社区「几百个微 skill」：我们用 **少量深 skill + 路由 + ops** 覆盖主战场。  
-> 日期：2026-07-17
+> 日期：2026-07-18
 
 ## 域 → 本包入口
 
@@ -9,14 +9,23 @@
 |----|----------------|------|
 | 移动 Android | `apk-reverse/` `mobile-reverse/` | |
 | 移动 iOS | `mobile-reverse/` | |
-| 二进制深挖 | `ida-reverse/` `radare2/` | |
+| 二进制深挖 | `ida-reverse/` `radare2/` `ghidra-reverse/` | Ghidra = 开源主路径 |
 | 通用 RE / 反调试 / OLLVM | `reverse-engineering/` | |
 | .NET | `dotnet-reverse/` | |
 | 前端 JS / 签名 | `js-reverse/` | |
+| 浏览器扩展 | `browser-extension-reverse/` | |
 | DSL/风控 VM | `reverse-engineering/dsl-vm-reverse/` | |
+| 协议 / PCAP 协议 | `protocol-reverse/` | |
 | 固件 IoT | `firmware-pentest/` | |
 | 恶意样本 | `malware-analysis/` | |
+| 数字取证 / IR | `digital-forensics/` | |
+| 威胁狩猎 / 蓝队 | `threat-hunting/` | |
 | 渗透工具 | `pentest-tools/` (+ src-hunter) | |
+| Windows / AD | `windows-ad/` | |
+| 云 / 容器 / K8s | `cloud-k8s/` | |
+| 代码审计 / SAST | `code-audit/` | |
+| Wi-Fi / 无线 | `wifi-wireless/` | |
+| 游戏客户端 | `game-reverse/` | |
 | 多阶段攻击 | `attack-chain/` | |
 | Pwn | `pwn-chain/` | |
 | N-day 补丁 | `patch-diff-exploit/` | |
@@ -35,7 +44,7 @@
 
 | 域 | 策略 |
 |----|------|
-| OT/ICS | 联网搜方法论 → 提议新 skill 或外链 ToB/社区 |
+| OT/ICS | 仍缺独立深 skill：联网搜方法论 → 提议新增或外链 ToB |
 | 纯 GRC/合规长文 | 不替代专业 GRC 工具；可写报告模板引用 |
 | 800+ ATT&CK 微 skill | 用本表 + ATT&CK 可选标签（Finding 字段） |
 

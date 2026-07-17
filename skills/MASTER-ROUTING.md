@@ -68,6 +68,16 @@ powershell -File skills\scripts\append-evidence.ps1 -CaseRoot work\my-case -Id E
 | **R18** | EDR / 免杀 / syscall | `edr-bypass-re/` |
 | **R19** | 浏览器/桌面自动化 | `browser-automation/` |
 | **R20** | 报告 / writeup | `docs-generator/` |
+| **R21** | 协议 / Protobuf / PCAP 协议 | `protocol-reverse/` |
+| **R22** | Ghidra / 开源反编译 | `ghidra-reverse/` |
+| **R23** | 云 / 容器 / K8s | `cloud-k8s/` |
+| **R24** | Windows / AD / Kerberos / AD CS | `windows-ad/` |
+| **R25** | 取证 / 内存转储 / 时间线 | `digital-forensics/` |
+| **R26** | 代码审计 / SAST / Semgrep | `code-audit/` |
+| **R27** | 威胁狩猎 / 检测工程 / 蓝队 | `threat-hunting/` |
+| **R28** | 游戏逆向 / Unity IL2CPP | `game-reverse/` |
+| **R29** | Wi-Fi / 无线渗透 | `wifi-wireless/` |
+| **R30** | 浏览器扩展逆向 | `browser-extension-reverse/` |
 | **R0** | 通用逆向 / 反调试 / OLLVM / 未知二进制 | `reverse-engineering/` |
 
 未命中强关键词 → PRIMARY=`R0`，并提示打开 `routing.md`。

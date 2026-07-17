@@ -136,7 +136,17 @@ $cases = @(
     @{ N = 'apk'; H = 'apk jadx smali reverse'; Id = 'R1'; Sub = 'apk-reverse/SKILL.md' },
     @{ N = 'malware'; H = 'malware yara sample analysis'; Id = 'R9'; Sub = 'malware-analysis/SKILL.md' },
     @{ N = 'pentest'; H = 'nmap nuclei pentest sqlmap'; Id = 'R11'; Sub = 'pentest-tools/SKILL.md' },
-    @{ N = 'attack'; H = 'full pentest attack chain domain'; Id = 'R10'; Sub = 'attack-chain/SKILL.md' }
+    @{ N = 'attack'; H = 'full pentest attack chain from external'; Id = 'R10'; Sub = 'attack-chain/SKILL.md' },
+    @{ N = 'protocol'; H = 'protobuf custom protocol reverse pcap'; Id = 'R21'; Sub = 'protocol-reverse/SKILL.md' },
+    @{ N = 'ghidra'; H = 'ghidra headless decompile'; Id = 'R22'; Sub = 'ghidra-reverse/SKILL.md' },
+    @{ N = 'cloud'; H = 'kubernetes k8s container escape'; Id = 'R23'; Sub = 'cloud-k8s/SKILL.md' },
+    @{ N = 'ad'; H = 'bloodhound kerberoast active directory'; Id = 'R24'; Sub = 'windows-ad/SKILL.md' },
+    @{ N = 'forensics'; H = 'volatility memory dump forensics'; Id = 'R25'; Sub = 'digital-forensics/SKILL.md' },
+    @{ N = 'codeaudit'; H = 'semgrep code audit sast'; Id = 'R26'; Sub = 'code-audit/SKILL.md' },
+    @{ N = 'hunt'; H = 'threat hunting detection engineering'; Id = 'R27'; Sub = 'threat-hunting/SKILL.md' },
+    @{ N = 'game'; H = 'il2cpp unity game reverse'; Id = 'R28'; Sub = 'game-reverse/SKILL.md' },
+    @{ N = 'wifi'; H = 'wifi aircrack wireless pentest'; Id = 'R29'; Sub = 'wifi-wireless/SKILL.md' },
+    @{ N = 'extension'; H = 'chrome extension crx reverse'; Id = 'R30'; Sub = 'browser-extension-reverse/SKILL.md' }
 )
 foreach ($c in $cases) {
     $out = Join-Path $ScratchDir ("route-{0}" -f $c.N)
